@@ -1,0 +1,31 @@
+\name{cppIsomap-package}
+\alias{cppIsomap-package}
+\alias{cppIsomap}
+\docType{package}
+\title{
+  RCpp port of RDRToolbox's Isomap embedding implementation
+}
+\description{
+  Provides cppIsomap function that computes the Isomap embedding as introduced in 2000 by Tenenbaum, de Silva and Langford. Direct port of RDRToolbox version. Does not implement residual plot.
+}
+\details{
+  The only function exported by this package is cppIsomap, which has the same parameters as RDRToolbox::Isomap.
+}
+\author{
+Marc Burgess
+
+Maintainer: Marc Burgess <mburgessza@gmail.com>
+}
+\references{
+  See RDRToolbox package from BioConductor
+}
+\keyword{ package }
+\seealso{
+  ~~ Optional links to other man pages
+}
+\examples{
+  \dontrun{
+     ## Optional simple examples of the most important functions
+     ## These can be in \dontrun{} and \donttest{} blocks.   
+  }
+}
