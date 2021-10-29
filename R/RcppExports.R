@@ -17,18 +17,16 @@
 #' @return It returns a N x dim matrix (N samples, dim features) with the reduced input data (list of several matrices if more than one dimension was specified)
 #'  
 #' @examples
-#' \dontrun{
-#' ## two dimensional Isomap embedding of a 1.000 dimensional dataset using k=5 neighbours
+#' library(RDRToolbox)
 #' ## two dimensional Isomap embedding of a 1.000 dimensional dataset using k=5 neighbours
 #' d = RDRToolbox::generateData(samples=20, genes=1000, diffgenes=100, blocksize=10)
-#' d_low = Isomap(data=d[[1]], dims=2, k=5)
+#' d_low = cppIsomap(data=d[[1]], dims=2, k=5)
 #' ## Isomap residuals for target dimensions 1-10
-#' d_low = Isomap(data=d[[1]], dims=1:10, k=5, plotResiduals=TRUE)	
+#' d_low = cppIsomap(data=d[[1]], dims=1:10, k=5, plotResiduals=TRUE)	
 #'     
 #' ## three dimensional Isomap embedding of a 1.000 dimensional dataset using k=10 (nearest and farthest) neighbours
 #' d = generateData(samples=20, genes=1000, diffgenes=100, blocksize=10)
-#' d_low = Isomap(data=d[[1]], dims=3, mod=TRUE, k=10)
-#' }
+#' d_low = cppIsomap(data=d[[1]], dims=3, mod=TRUE, k=10)
 #' @seealso \link[RDRToolbox]{Isomap}
 #' @name cppIsomap
 #' @export
