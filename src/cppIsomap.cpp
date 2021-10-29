@@ -1,5 +1,7 @@
 #include "cppIsomap.h"
 
+// [[Rcpp::plugins("cpp11")]]
+
 //' Computes the Isomap embedding as introduced in 2000 by Tenenbaum, de Silva and Langford.
 //' 
 //' Isomap is a nonlinear dimension reduction technique, that preserves global properties of the data. 
